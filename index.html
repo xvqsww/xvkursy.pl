@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>xvKURSY</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Kosmiczne tło */
+        body {
+            margin: 0;
+            font-family: 'Orbitron', sans-serif;
+            color: #ffffff;
+            background: #0b0c17;
+            overflow-x: hidden;
+        }
+
+        /* Gwiazdy animowane */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: transparent;
+            box-shadow:
+                100px 200px #fff,
+                300px 400px #fff,
+                500px 100px #fff,
+                700px 300px #fff,
+                900px 150px #fff,
+                1200px 500px #fff,
+                1500px 250px #fff;
+            animation: twinkle 5s infinite alternate;
+        }
+
+        @keyframes twinkle {
+            from {opacity: 0.7;}
+            to {opacity: 1;}
+        }
+
+        header {
+            background: rgba(2, 6, 23, 0.9);
+            padding: 30px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            color: #38bdf8;
+        }
+
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.2em;
+            color: #a5b4fc;
+        }
+
+        nav {
+            background: rgba(2, 6, 23, 0.8);
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #ffffff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            color: #38bdf8;
+            margin-bottom: 15px;
+        }
+
+        .box {
+            background: rgba(2, 6, 23, 0.7);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(56, 189, 248, 0.3);
+        }
+
+        button {
+            background: #38bdf8;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            color: #0b0c17;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background: #0ea5e9;
+        }
+
+        footer {
+            background: rgba(2, 6, 23, 0.9);
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            color: #9ca3af;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>xvKURSY</h1>
+    <p>Analiza kursów. Zero pewniaków. Zero bajek.</p>
+</header>
+
+<nav>
+    <a href="#home">Strona główna</a>
+    <a href="#tools">Narzędzia</a>
+    <a href="#about">Dowiedz się więcej</a>
+</nav>
+
+<main>
+
+    <section id="home">
+        <h2>O co tu chodzi?</h2>
+        <div class="box">
+            <p>
+                xvKURSY to narzędzie, które pomaga analizować kursy bukmacherskie i wyłapywać value,
+                czyli sytuacje, w których kurs jest zawyżony względem realnego prawdopodobieństwa.
+                To nie są tipy, nie ma tu pewniaków i nie ma gwarancji zysku — są tylko liczby, dane i chłodna analiza.
+            </p>
+        </div>
+    </section>
+
+    <section id="tools">
+        <h2>Narzędzia</h2>
+        <div class="box">
+            <ul>
+                <li>Porównywanie kursów u różnych bukmacherów</li>
+                <li>Szacowane prawdopodobieństwa wyników</li>
+                <li>Wskazanie value betów</li>
+                <li>Pomoc w zarządzaniu bankrollem</li>
+            </ul>
+            <button>Wkrótce więcej</button>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>Dowiedz się więcej</h2>
+        <div class="box">
+            <p>
+                To narzędzie analityczne stworzone dla osób, które chcą podejmować decyzje na podstawie danych,
+                a nie emocji. Pokazujemy, gdzie kurs może mieć wartość, ale to Ty decydujesz, czy grasz.
+                Bukmacherka zawsze wiąże się z ryzykiem, możliwe są serie przegranych, dlatego kluczowe są
+                niskie stawki, single i myślenie długoterminowe.
+            </p>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2025 xvKURSY — grasz na własne ryzyko</p>
+</footer>
+
+</body>
+</html>
